@@ -165,6 +165,7 @@ function biteAndRun(event) {
     attempts++;
     lastTrigger={...pointer};
     setState('approaching');
+    catText.classList.remove('is-visible');
     showRunFrame(0);
     catText.textContent = attempts===1 ? 'Mine!' : 'Not this time!';
     const start=noBtn.getBoundingClientRect();
@@ -223,6 +224,8 @@ function biteAndRun(event) {
             noBtn.style.transform='';
             placeButton(next.x,next.y);
             sitBesideButton();
+            catText.textContent='Naeem loves you so much, say YES!';
+            catText.classList.add('is-visible');
             rearmAt=performance.now()+250;
             return;
         }

@@ -228,7 +228,8 @@ button:focus-visible { outline: 3px solid #e92e62; outline-offset: 5px; }
     border-radius: 15px; font-size: 13px; font-weight: 700; color: #c52f59;
     box-shadow: 0 6px 18px #00000015; opacity: 0; transition: opacity .2s;
 }
-.cat[data-state="biting"] .cat-text { opacity: 1; }
+.cat[data-state="biting"] .cat-text,
+.cat-text.is-visible { opacity: 1; }
 #noBtn { transition: none; touch-action: manipulation; }
 @media (prefers-reduced-motion: reduce) {
     .love-icon, .success-heart, .success-content, .boom-heart, .cat[data-state="sitting"] .cat-sit { animation: none; }
@@ -501,7 +502,8 @@ button:focus-visible { outline: 3px solid #e92e62; outline-offset: 5px; }
 
 
     <h1>
-        Will you go on a date with me?
+        Hi Omee,<br>
+        will you go on a date with me?
     </h1>
 
 
